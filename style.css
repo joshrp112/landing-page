@@ -6,6 +6,7 @@ head {
 }
 
 body {
+    margin: 0;
     font-family: Roboto;
     display: flex;
     flex-direction: column;
@@ -20,6 +21,10 @@ ul {
 a {
     text-decoration: none;
     color: #e5e7eb;
+}
+
+button {
+    flex-grow: 0;
 }
 
 .header {
@@ -43,4 +48,68 @@ a {
     display: flex;
     gap: 20px;
     margin-right: 48px;
+}
+
+.top {
+    display: flex;
+}
+
+.top-left {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-right {
+    display: flex;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+}
+
+.images {
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    display: flex;
+}
+
+.footer {
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f2937;
+    color: #f9faf8;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-grow: 1;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomer {
+    display: flex;
+}
+
+.action {
+    display: flex;
+    flex-direction: column;
 }
