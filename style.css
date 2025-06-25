@@ -12,6 +12,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: stretch;
+    height: 100vh;
 }
 
 ul {
@@ -25,6 +26,11 @@ a {
 
 button {
     flex-grow: 0;
+    outline-color: #f9faf8;
+    background: #3882f6;
+    color: #f9faf8;
+    border-radius: 5px;
+    
 }
 
 .header {
@@ -52,11 +58,13 @@ button {
 
 .top {
     display: flex;
+    background: #1f2937;
 }
 
 .top-left {
     display: flex;
     flex-direction: column;
+    color: #f9faf8;
 }
 
 .top-right {
@@ -103,13 +111,32 @@ button {
 .bottom {
     display: flex;
     flex-direction: column;
+    background: #e5e7eb;
 }
 
 .bottomer {
     display: flex;
+    
 }
 
 .action {
     display: flex;
     flex-direction: column;
+    background: #3882f6;
+    
+}
+
+.white {
+    border-color: #f9faf8;
+    border-style: solid;
+}
+
+.blue {
+    border-style: none;
+}
+
+.quote {
+    font-size: 36px;
+    font-family: 'light italic';
+    color: #1f2937;
 }
