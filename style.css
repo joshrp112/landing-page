@@ -62,6 +62,7 @@ button {
     align-items: center;
     background: #1f2937;
     padding: 48px;
+    gap: 24px;
 }
 
 .awesome {
@@ -102,11 +103,19 @@ button {
 .list {
     display: flex;
     outline: 2px solid red;
+    gap: 48px;
 }
 
 .item {
     display: flex;
     flex-direction: column;
+}
+
+.image {
+    border-radius: 5px;
+    border-color: #3882f6;
+    border-width: 2px;
+    border-style: solid;
 }
 
 .footer {
@@ -130,34 +139,76 @@ button {
     display: flex;
     flex-direction: column;
     background: #e5e7eb;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 48px;
+    flex-wrap: wrap;
+    outline: 2px solid red;
+    gap: 2px;
+}
+
+.quoter {
+    display: flexbox;
+    justify-self: center;
+    align-self: center;
+    font-size: 24px;
+    font-weight: bold;
+    align-items: flex-end;
+    text-align: end;
+    padding: 0;
+    margin: 0;
+    width: 50%;
+    outline: 2px solid red;
 }
 
 .bottomer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    background: #3882f6;
+    margin: 48px;
+    gap: 24px;
+    border-radius: 5px;
 }
 
 .action {
     display: flex;
     flex-direction: column;
-    background: #3882f6;
-    justify-content: space-around;
+    color: #f9faf8;
+    justify-content: center;
+    padding: 0px;
+    margin: 34px;
+    outline: 2px solid red;
+    gap: 2px;
 }
 
 .white {
     border-color: #f9faf8;
     border-style: solid;
+    height: 36px;
+    width: 100px;
+    align-self: center;
 }
 
 .blue {
     border-style: none;
+    align-self: flex-start;
+    height: 36px;
+    width: 100px;
 }
 
 .quote {
     font-size: 36px;
     font-family: 'light italic';
     color: #1f2937;
+    font-style: italic;
+    align-self: center;
+    outline: 2px solid red;
+    text-align: left;
+    width: 50%;
+    margin: 0;
+}
+
+.time {
+    padding: 0;
+    margin: 0;
 }
