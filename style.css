@@ -104,14 +104,17 @@ button {
 
 .top-right {
     display: flex;
-    height: max-content;
+    height: 400px;
+    width: 800px;
     flex: 1;
 }
 
 .wall {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     flex-grow: inherit;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .middle {
@@ -129,20 +132,27 @@ button {
 .images {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .list {
     display: flex;
-    width: 75%;
-    gap: 48px;
+    width: 100%;
+    gap: 10px;
     align-self: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
 }
 
 .item {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    max-width: 200px;
+    flex: 1;
+    align-items: center;
 }
 
 .image {
@@ -150,6 +160,10 @@ button {
     border-color: #3882f6;
     border-width: 2px;
     border-style: solid;
+    width: 100%;
+    margin-bottom: 10px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
 }
 
 .footer {
