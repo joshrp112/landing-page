@@ -17,6 +17,8 @@ body {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -40,12 +42,22 @@ button {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0px 48px;
+    /* padding: 0px 48px; */
+    gap: 24px;
+}
+
+.header-box {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    align-self: center;
 }
 
 .logo {
     font-size: 24px;
-    margin-left: 48px;
+    /* margin-left: 48px; */
 }
 
 .right-links {
@@ -53,15 +65,24 @@ button {
     color: #e5e7eb;
     display: flex;
     gap: 20px;
-    margin-right: 48px;
+    /* margin-right: 48px; */
 }
 
 .top {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background: #1f2937;
-    padding: 48px;
+    padding: 48px 0px;
+}
+
+.top-box {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    align-self: center;
     gap: 24px;
 }
 
@@ -69,6 +90,7 @@ button {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
+    margin: 0;
 }
 
 .top-left {
@@ -77,11 +99,20 @@ button {
     color: #f9faf8;
     justify-content: flex-start;
     flex-wrap: wrap;
+    flex: 1;
 }
 
 .top-right {
     display: flex;
     height: max-content;
+    flex: 1;
+    outline: 2px solid red;
+}
+
+.wall {
+    max-width: 100%;
+    height: auto;
+    flex-grow: inherit;
 }
 
 .middle {
@@ -89,6 +120,7 @@ button {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 48px;
 }
 
 .title {
@@ -102,8 +134,11 @@ button {
 
 .list {
     display: flex;
-    outline: 2px solid red;
+    width: 75%;
     gap: 48px;
+    align-self: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .item {
@@ -143,8 +178,20 @@ button {
     align-items: center;
     padding: 48px;
     flex-wrap: wrap;
-    outline: 2px solid red;
+    
     gap: 2px;
+}
+
+.quote {
+    font-size: 36px;
+    font-family: 'light italic';
+    color: #1f2937;
+    font-style: italic;
+    align-self: center;
+    
+    text-align: left;
+    width: 75%;
+    margin: 0;
 }
 
 .quoter {
@@ -157,17 +204,20 @@ button {
     text-align: end;
     padding: 0;
     margin: 0;
-    width: 50%;
-    outline: 2px solid red;
+    width: 75%;
+    
 }
 
 .bottomer {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     background: #3882f6;
     margin: 48px;
     gap: 24px;
     border-radius: 5px;
+    width: 75%;
+    align-self: center;
 }
 
 .action {
@@ -177,7 +227,7 @@ button {
     justify-content: center;
     padding: 0px;
     margin: 34px;
-    outline: 2px solid red;
+    
     gap: 2px;
 }
 
@@ -194,18 +244,6 @@ button {
     align-self: flex-start;
     height: 36px;
     width: 100px;
-}
-
-.quote {
-    font-size: 36px;
-    font-family: 'light italic';
-    color: #1f2937;
-    font-style: italic;
-    align-self: center;
-    outline: 2px solid red;
-    text-align: left;
-    width: 50%;
-    margin: 0;
 }
 
 .time {
